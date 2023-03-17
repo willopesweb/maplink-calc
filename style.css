@@ -83,6 +83,10 @@ body {
   flex-basis: 100%;
 }
 
+.api-input input[type="range"] {
+  width: 80%;
+}
+
 .form-actions {
   display: flex;
   margin-top: 20px;
