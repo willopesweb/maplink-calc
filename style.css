@@ -1,0 +1,100 @@
+:root {
+  --background-color: #fdfaff;
+  --theme-color-1: #412f85;
+  --theme-color-2: #ff6700;
+  --theme-color-3: #cb5b12;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--background-color);
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 auto;
+  margin: 0 5%;
+  width: 90%;
+  max-width: 1300px;
+}
+
+.main-content {
+  margin: 100px auto;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.main-title {
+  color: var(--theme-color-1);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.product-title {
+  color: var(--theme-color-1);
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.api-title {
+  font-size: 18px;
+}
+.api-content {
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.api-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 10px auto;
+}
+
+.api-input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.api-input-title {
+  flex-basis: 100%;
+}
+
+.form-actions {
+  display: flex;
+  margin-top: 20px;
+}
+.button {
+  text-decoration: none;
+  background-color: var(--theme-color-2);
+  border-radius: 5px;
+  color: #fff;
+  transition: 0.15s linear;
+  padding: 10px 20px;
+}
+
+.button:hover {
+  background-color: var(--theme-color-3);
+}
