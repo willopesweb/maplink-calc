@@ -22,7 +22,7 @@
         <div class="api-form">
           <label class="api-input">
             <span class="api-input-title">Quantas rotas você prentende fazer por mês?</span>
-            <input type="range" onchange="showSliderValue('sliderValue',this.value)" name="points" min="10" max="1000000" value="100">
+            <input type="range" oninput="showSliderValue('sliderValue',this.value)" name="points" min="10" max="1000000" value="100">
             <span id="sliderValue">10 rotas</span>
           </label>
           <label class="api-input">
