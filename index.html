@@ -17,37 +17,13 @@
     <h2 class="main-title">Calculadora Maplink</h2>
     <section>
       <h3 class="product-title">Maplink Platform</h3>
-      <div class="api-content">
-        <h4 class="api-title">Trip</h4>
-        <div class="api-form">
-          <label class="api-input">
-            <span class="api-input-title">Quantas rotas você prentende fazer por mês?</span>
-            <input type="range" oninput="showSliderValue('sliderValue',this.value,'rotas')" name="points" step="100" min="0" max="500000" value="100">
-            <span id="sliderValue">10 rotas</span>
-          </label>
-          <label class="api-input">
-            <span class="api-input-title">Qual a média de pontos de parada nessas rotas??</span>
-            <input type="number" max="200" value="2">
-          </label>
-        </div>
-        <div class="api-form">
-          <label class="api-input">
-            <span class="api-input-title">Quantas rotas você prentende fazer por mês?</span>
-            <input type="number" value="100" />
-          </label>
-          <label class="api-input">
-            <span class="api-input-title">Qual a média de pontos de parada nessas rotas??</span>
-            <input type="range" oninput="showSliderValue('sliderValue2',this.value,'pontos')" name="points" min="2" max="200" value="2">
-            <span id="sliderValue2">2 pontos</span>
-          </label>
-        </div>
-      </div>
+      <div id="platform"></div>
       <div class="form-actions">
         <a href="#" class="button">Gerar proposta</a>
       </div>
     </section>
   </main>
-  <script src="main.js"></script>
+  <script type="module" src="main.js"></script>
 
 </body>
 

@@ -62,9 +62,30 @@ body {
 .api-content {
   padding: 20px;
   border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
 
-.api-form {
+.api-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.api-add-new-case {
+  font-size: 14px;
+  color: var(--theme-color-2);
+  cursor: pointer;
+  transition: 0.15s linear;
+}
+
+.api-add-new-case:hover,
+.api-add-new-case:focus,
+.api-add-new-case:active {
+  color: var(--theme-color-3);
+  text-decoration: underline;
+}
+
+.api-case {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -83,8 +104,38 @@ body {
   flex-basis: 100%;
 }
 
-.api-input input[type="range"] {
+.api-input-range {
   width: 80%;
+  display: flex;
+  gap: 100px;
+  position: relative;
+}
+.api-input input[type="range"] {
+  display: flex;
+  width: 100%;
+}
+
+.api-input input[type="range"]::after {
+  content: attr(data-value) " " attr(data-unit);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  position: absolute;
+  left: calc(100% + 20px);
+  top: -3px;
+  width: max-content;
+}
+
+.api-input input[type="text"],
+.api-input input[type="number"],
+.api-input select {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  padding: 5px;
+  text-align: center;
+  min-width: 250px;
 }
 
 .form-actions {
